@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      window.onload=function(){
+        let oL=document.getElementById('l1');
+        let oBtn=document.getElementById('btn');
+
+        oBtn.onclick=function(){
+          oL.setAttribute('x2',200);
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" name="button" id="btn" value="按钮">按钮</button><br>
+    <svg width='800' height='600'>
+      <line x1='100' y1='100' x2='400' y2='300' style="stroke:red;stroke-width:20" id="l1"></line>
+    </svg>
+  </body>
+</html>
